@@ -1,7 +1,9 @@
-/*base*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+@import "compass/css3";
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
 @media print {
     @page {
-        margin: 0 auto;
+        margin: 0;
     }
     .moncv{
     	widows: 1;
@@ -38,8 +40,6 @@ body{
 .container{
 	margin: 0 10% 0 10%;
 }
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
-
 /* valeur par défaut */
 .container{
 	font-family: 'Raleway', sans-serif;
@@ -71,7 +71,6 @@ body{
 	color: #43DDE6;
 	margin: 10px 0 10px 0;	
 }
-/*end base*/
 /*navigation*/
 #cssmenu {
   background: #43DDE6;
@@ -86,7 +85,6 @@ body{
   padding: 0;
   line-height: 1;
   display: block;
-  zoom: 1;
 }
 #cssmenu ul:after {
   content: " ";
@@ -117,10 +115,6 @@ body{
   text-transform: uppercase;
   font-size: 14px;
   position: relative;
-  -webkit-transition: color .25s;
-  -moz-transition: color .25s;
-  -ms-transition: color .25s;
-  -o-transition: color .25s;
   transition: color .25s;
 }
 #cssmenu ul li a:hover {
@@ -149,10 +143,6 @@ body{
   height: 3px;
   width: 0;
   background: #364F6B;
-  -webkit-transition: width .25s;
-  -moz-transition: width .25s;
-  -ms-transition: width .25s;
-  -o-transition: width .25s;
   transition: width .25s;
 }
 #cssmenu ul li.last > a:after,
@@ -179,8 +169,6 @@ body{
   }
   #cssmenu ul li a {
     width: 100%;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-bottom: 1px solid #fb998c;
   }
@@ -218,7 +206,7 @@ text-align: center;
 .informations li{
 	display: inline-block;
 	font-size: 15px;
-	border: 10px 0 10px 0;
+	margin: 5px 0 5px;
 	font-family: 'Roboto Mono', monospace;;
 	color: #FC5185;
 	padding: 0 15px;
@@ -290,9 +278,6 @@ font: small-caps bold 10px/1 sans-serif;
 .contact{
 	text-align: center;
 }
-@import "compass/css3";
-
-@import url(https://fonts.googleapis.com/css?family=Merriweather);
 
 .contactForm h1 {
    text-align: center;
@@ -319,17 +304,14 @@ font: small-caps bold 10px/1 sans-serif;
      color: white; 
      background: #FC5185;
      cursor: pointer;
+     width: 52%;
   }
   
  .contactForm textarea {
       height: 126px;
   }
-}
-
 
 .demi {
-  float: left;
-  width: 48%;
   margin-bottom: 1em;
 }
 
@@ -365,19 +347,23 @@ font: small-caps bold 10px/1 sans-serif;
 .social-network .twitter {
       background-position: -96px 0px;
     }
-    
-    .social-network li {
-      display: inline-block;
-      text-align: center;
-    }
+
+.social-network li {
+     display: inline-block;
+     text-align: center;
+}
    
-  .footer {
-    text-align: center;
+.footer {
     position: relative;
     width: 100%;
     padding-top: 50px;
     height: 50px;
+    display: inline-block;
     text-align: center;
+  }
+
+  .footer li{
+	text-align: center;
   }
   
   .img-footer {
