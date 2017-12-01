@@ -1,4 +1,36 @@
 /*base*/
+@media print {
+    @page {
+        margin: 0 auto;
+    }
+    .moncv{
+    	widows: 1;
+        orphans: 5;
+    }
+    .projets{
+    	display: none;
+    }
+    .contact{
+    	display: none;
+    }
+    .footer{
+    	display: none;
+    }
+    #cssmenu{
+    	display: none;
+    }
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    blockquote:first-line,
+    li:first-line {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+}
 body{
 	background: url(images/crossword.png);
 	width: 100%;
@@ -8,9 +40,26 @@ body{
 }
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
 
+/* valeur par défaut */
 .container{
-		font-family: 'Raleway', sans-serif;
-		text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	text-decoration: none;
+	width:1200px;
+    display: inline-block;
+}
+/* version grand écran */
+@media screen and (min-width: 1000px) {
+    .article {
+        width:500px;
+        display:block;
+    }
+}
+
+/* version mobile */
+@media screen and (min-width: 200px) and (max-width: 640px) {
+    .article {
+        display:block;
+    }
 }
 .container h1{
 	font-size: 35px;
