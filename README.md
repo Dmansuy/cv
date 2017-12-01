@@ -5,7 +5,7 @@ Auteur : Diane Mansuy
 Code : HTML / CSS
 
 # Description
-Nous avons réalisé en 1 jour et demi-2 jour sous les instructions du grand Martin Supiot un CV en ligne intituler "Impressionner moi".   
+Nous avons réalisé en 1 jour et demi-2 jour sous les instructions du grand Martin Supiot un CV en ligne intituler "Impressionnez-moi".   
 Les instructions :  
 > TP : Impressionnez-moi !  
 > Faites un site « one-page » reprenant les concepts appris en cours cette semaine.  
