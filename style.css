@@ -267,11 +267,18 @@ font: small-caps bold 10px/1 sans-serif;
 	text-align: center;
 	text-decoration: none;
 }
-.miniProjets img{
+
+/*zoom image*/
+.item img {
 	display: inline-block;
 	margin: 10px 15px 10px;
 	width: 35%;
 }
+.item:hover img {
+  transform: scale(1.1);
+}
+/*end zoom image*/
+
 /*end projets*/
 
 /*contact*/
