@@ -12,14 +12,14 @@
 		</style>
 		<title>Mon CV</title>
 	</head>
-	<!---Navigation-->
 	<div class="container">
+		<!---Navigation-->
 		<div id='cssmenu'>
 			<ul>
 				<li class='active'><a href='#top'><span>Présentation</span></a></li>
 				<li><a href='#cv'><span>CV</span></a></li>
-				<li><a href='#'><span>Projets</span></a></li>
-				<li class='last'><a href='#'><span>Contact</span></a></li>
+				<li><a href='#projets'><span>Projets</span></a></li>
+				<li class='last'><a href='#contact'><span>Contact</span></a></li>
 			</ul>
 		</div>
 		<!---end Navigation-->
@@ -46,7 +46,6 @@
 		<!-- cv -->
 		<div id="cv">
 			<div class="moncv">
-				<h1>Curiculum Vitae</h1>
 				<div class="formation">
 					<h2>Formation</h2>
 					<h3>------------------------------------------------------------</h3>
@@ -79,7 +78,7 @@
 						</tr>
 						<tr>
 							<td class="boldCV"><p>Conplures Imperi<p/></td>
-							<td><p>Modum suae civitatibus Constantius omnes perviis in itinera sua adsistebant aulaeum funestis stimulis agenda reginae quaesitum.<p/></td>
+							<td><p>Modum suae civitatibus Constantius omnes perviis in itinera sua adsistebant aulaeum funestis stimulis agenda reginae quaesitumt.<p/></td>
 						</tr>
 					</table>
 				</div>
@@ -93,11 +92,55 @@
 				<div class="loisirs">
 					<h2>Loisirs</h2>
 					<h3>------------------------------------------------------------</h3>
-					<li>loisirs1</li>
-					<li>loisirs2</li>
+					<li>Saxa</li>
+					<li>Extollere</li>
+					<li>Mihi</li>
 				</div>
 			</div>
+			<!-- end cv -->
+			<!-- mes projets -->
+			<div id="projets">
+				<div class="projets">
+					<h1>Mes Projets</h1>
+					<div class="miniProjets">
+						<a href="#1"><img src="images/site1.png"></a>
+						<a href="#2"><img src="images/site2.png"></a>
+						<a href="#3"><img src="images/site3.png"></a>
+						<a href="#4"><img src="images/site4.png"></a>
+					</div>
+				</div>
+			</div>
+			<!-- end mes projets -->
+			<!-- contact -->
+			<div id="contact">
+				<div class="contact">
+					<h1>Contact</h1>
+					<form class="cf">
+						<div class="demi gauche contactForm">
+							<input type="text" id="input-name" placeholder="Name">
+							<input type="email" id="input-email" placeholder="Email address">
+							<input type="text" id="input-subject" placeholder="Subject">
+						</div>
+						<div class="demi droite contactForm">
+							<textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+							<input type="submit" value="Submit" id="input-submit">
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- end contact -->
+			<!-- footer -->
+			<footer class="footer">
+				<div class="footer-icon">
+					<ul class="social-network">
+						<li><a href="https://fr-fr.facebook.com/" class="facebook" ></a></li>
+						<li><a href="https://www.youtube.com/?gl=FR&hl=fr" class="youtube" ></a></li>
+						<li><a href="https://twitter.com" class="twitter" ></a></li>
+					</ul>
+				</div>
+				<!-- end footer -->
+			</div>
 		</div>
-		<!-- end cv -->
-	</body>
+	</div>
+</body>
 </html>

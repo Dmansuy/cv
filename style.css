@@ -1,3 +1,4 @@
+/*base*/
 body{
 	background: url(images/crossword.png);
 	width: 100%;
@@ -6,6 +7,23 @@ body{
 	margin: 0 10% 0 10%;
 }
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+
+.container{
+		font-family: 'Raleway', sans-serif;
+		text-decoration: none;
+}
+.container h1{
+	font-size: 35px;
+	color: #364F6B;
+	margin: 30px 0 50px 0;
+}
+.container h2{
+	font-size: 20px;
+	color: #43DDE6;
+	margin: 10px 0 10px 0;	
+}
+/*end base*/
+/*navigation*/
 #cssmenu {
   background: #43DDE6;
   width: auto;
@@ -128,12 +146,9 @@ body{
     display: none;
   }
 }
-/*.presentation img{
-	background-image:url(images/bg.jpg) no-repeat;
-	height: 90vh;
-	width: 100%;
-	margin: 0 0 50px 0;
-}*/
+/*end navigation*/
+
+/*présentation*/
 .presentation{
 font-family: 'Raleway', sans-serif;
 text-align: center;
@@ -166,19 +181,12 @@ text-align: center;
 	width: 100%;
 	margin: 30px 0 30px;
 }
+/*end presentation*/
+
+/*CV*/
 .moncv{
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
-}
-.moncv h1{
-	font-size: 35px;
-	color: #364F6B;
-	margin: 2px 0 50px 0;	
-}
-.moncv h2{
-	font-size: 20px;
-	color: #43DDE6;
-	margin: 10px 0 10px 0;	
 }
 .moncv p{
 	font-size: 15px;
@@ -205,6 +213,125 @@ font: small-caps bold 10px/1 sans-serif;
 .langues{
 	list-style: none;
 	color: #364F6B;
-	margin: 2px 0 50px 0;	
+	margin: 2px 0 10px 0;	
+}
+.moncv li{
+	display: inline-block;
+	font-size: 12px;
+	margin: 10px 0 10px 0;
+	font-family: 'Roboto Mono', monospace;;
+	color: #FC5185;
+	padding: 0 15px;
+}
+/*end cv*/
+
+ /*projets*/
+.projets{
+	text-align: center;
+	text-decoration: none;
+}
+.miniProjets img{
+	display: inline-block;
+	margin: 10px 15px 10px;
+	width: 35%;
+}
+/*end projets*/
+
+/*contact*/
+.contact{
+	text-align: center;
+}
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+.contactForm h1 {
+   text-align: center;
+   color: #a8a8a8;
 }
 
+.contactForm form {
+   max-width: 600px;
+   text-align: center;
+   margin: 20px auto;
+}
+  
+  .contactForm input, textarea {
+     border:0; outline:0;
+     padding: 1em;
+     width: 50%;
+     margin-top: 1em;
+     font-family: 'Merriweather', sans-serif;
+     resize: none;
+     text-align: center;
+ }
+  
+  #input-submit {
+     color: white; 
+     background: #FC5185;
+     cursor: pointer;
+  }
+  
+ .contactForm textarea {
+      height: 126px;
+  }
+}
+
+
+.demi {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.droite { width: 98%; }
+
+.gauche {
+     margin-right: 2%; 
+}
+
+@media (max-width: 480px) {
+  .demi {
+     width: 100%; 
+     float: none;
+     margin-bottom: 0; 
+  }
+}
+/*end contact*/
+
+/*footer*/
+.social-network  a {
+      width: 45px;
+      height: 45px;
+      display: block;
+      background: url(images/mesimages.png) no-repeat;
+    }
+
+.social-network .facebook {
+      background-position: 0 0px;
+    }
+.social-network .youtube {
+      background-position: -49px 0px;
+    }
+.social-network .twitter {
+      background-position: -96px 0px;
+    }
+    
+    .social-network li {
+      display: inline-block;
+      text-align: center;
+    }
+   
+  .footer {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    padding-top: 50px;
+    height: 50px;
+    text-align: center;
+  }
+  
+  .img-footer {
+    margin: 0 5px 0 5px;
+  }
+/*end footer*/
